@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fce4b4;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.master {
+    width: 100%; 
+    padding: 20px;
+}
+
+.master .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.master .topo .logo img {
+    height: 150px;
+}
+
+.master .topo .menu {
+    background-color: #007680;
+    display: flex;
+    padding: 4px 30px;
+    border-radius: 50px;
+    gap: 100px;
+    color: white;
+    align-items: center;
+}
+
+.master .topo .menu p:first-child {
+    background-color: #e07a5f;
+    padding: 15px 15px;
+    border-radius: 50px;
+}
+
+.master .topo .pesquisar {
+    background-color: #e07a5f;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+.master .bolo-cenoura {
+    position: relative;
+    width: 85%; 
+    max-width: 900px;
+    margin: 0 auto 40px auto; 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.master .bolo-cenoura img {
+    width: 100%;
+    display: block;
+}
+
+.master .bolo-cenoura .texto-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(224, 122, 95, 0.9);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master .bolo-cenoura .texto-img p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.6rem;
+    color: #2e1a14;
+    font-weight: 700;
+}
+
+.master .bolo-cenoura .ver-receita {
+    background-color: #007680;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.master .secoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.master .secoes > div, 
+.master div.menu > div {
+    text-align: center;
+    background-color: #e9ad91;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.master .secoes img, 
+.master div.menu img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.master .secoes .texto-img p, 
+.master div.menu .texto-img p {
+    padding: 12px;
+    color: #2e1a14;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.master div.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.master div.menu .titulo-menu {
+    grid-column: 1 / -1;
+    background-color: #007680;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.master div.menu .titulo-menu p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 2.2rem;
+}
+
+.master .rodape {
+    background-color: #007680;
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.master .rodape p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.master .rodape .icone img {
+    height: 150px;
+}
+
+.master .rodape .menu-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+}
+
+.master .rodape .aviso-email p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.master .rodape .aviso-email .email p:first-child {
+    background-color: #e07a5f;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
