@@ -6,42 +6,55 @@
     box-sizing: border-box;
 }
 
+html {
+    -webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
 body {
     background-color: #fce4b4;
     display: flex;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .master {
-    width: 100%; 
-    padding: 20px;
+    width: 100%;
 }
 
 .master .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    padding: 20px 40px;
 }
 
 .master .topo .logo img {
-    height: 150px;
+    height: 120px;
 }
 
 .master .topo .menu {
     background-color: #007680;
     display: flex;
-    padding: 4px 30px;
+    padding: 4px 10px;
     border-radius: 50px;
-    gap: 100px;
-    color: white;
+    gap: 30px;
     align-items: center;
 }
 
-.master .topo .menu p:first-child {
+.master .topo .menu a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.master .topo .menu a:first-child {
     background-color: #e07a5f;
-    padding: 15px 15px;
     border-radius: 50px;
 }
 
@@ -50,13 +63,14 @@ body {
     color: white;
     padding: 15px 25px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .master .bolo-cenoura {
     position: relative;
     width: 85%; 
     max-width: 900px;
-    margin: 0 auto 40px auto; 
+    margin: 20px auto 40px auto; 
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -65,6 +79,7 @@ body {
 .master .bolo-cenoura img {
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
 .master .bolo-cenoura .texto-img {
@@ -80,7 +95,6 @@ body {
 }
 
 .master .bolo-cenoura .texto-img p {
-    font-family: 'Abhaya Libre', serif;
     font-size: 1.6rem;
     color: #2e1a14;
     font-weight: 700;
@@ -88,12 +102,16 @@ body {
 
 .master .bolo-cenoura .ver-receita {
     background-color: #007680;
-    color: rgb(255, 255, 255);
     padding: 8px 15px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.master .bolo-cenoura .ver-receita a {
+    color: white;
+    text-decoration: none;
 }
 
 .master .secoes {
@@ -101,6 +119,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 50px;
+    padding: 0px 40px;
 }
 
 .master .secoes > div, 
@@ -116,13 +135,13 @@ body {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .master .secoes .texto-img p, 
 .master div.menu .texto-img p {
     padding: 12px;
     color: #2e1a14;
-    font-family: 'Abhaya Libre', serif;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -131,6 +150,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    padding: 0 40px;
 }
 
 .master div.menu .titulo-menu {
@@ -144,35 +164,41 @@ body {
 }
 
 .master div.menu .titulo-menu p {
-    font-family: 'Abhaya Libre', serif;
     font-size: 2.2rem;
 }
 
 .master .rodape {
     background-color: #007680;
+    width: 100%;
     margin-top: 60px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     color: white;
-    border-radius: 20px 20px 0 0;
-    font-family: 'Abhaya Libre', serif;
 }
 
-.master .rodape p {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
 
 .master .rodape .icone img {
-    height: 150px;
+    height: 120px;
 }
 
 .master .rodape .menu-rodape {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 40px;
+}
+
+.master .rodape .menu-rodape a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.master .rodape .aviso-email p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    cursor: default;
 }
 
 .master .rodape .aviso-email p:first-child {
@@ -182,7 +208,9 @@ body {
 
 .master .rodape .aviso-email .email p:first-child {
     background-color: #e07a5f;
-    color: white;
-    padding: 5px 25px;
+    padding: 10px 20px;
     border-radius: 10px;
+    color: white;
+    display: block;
+    cursor: text;
 }
