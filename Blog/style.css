@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #fce4b4;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.master {
+    width: 100%;
+}
+
+.master .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.master .topo .logo img {
+    height: 120px;
+}
+
+.master .topo .menu {
+    background-color: #007680;
+    display: flex;
+    padding: 4px 10px;
+    border-radius: 50px;
+    gap: 30px;
+    align-items: center;
+}
+
+.master .topo .menu a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.master .topo .menu a:nth-child(3) {
+    background-color: #e07a5f;
+    border-radius: 50px;
+}
+
+.master .topo .pesquisar {
+    background-color: #e07a5f;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.master .conteudo .titulo-blog {
+    background-color: #007680;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.master .conteudo .titulo-blog p {
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.master .conteudo .blog {
+    position: relative;
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.master .blog img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.master .blog .texto-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(224, 122, 95, 0.9);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master .blog .texto-img p {
+    font-size: 1.6rem;
+    color: #2e1a14;
+    font-weight: 700;
+}
+
+.master .blog .ver-blog {
+    background-color: #007680;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.master .blog .ver-blog a {
+    color: white;
+    text-decoration: none;
+}
+
+.master .rodape {
+    background-color: #007680;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.master .rodape .icone img {
+    height: 120px;
+}
+
+.master .rodape .menu-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 60px;
+}
+
+.master .rodape .menu-rodape a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.master .rodape .aviso-email p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.master .rodape .aviso-email .email p {
+    background-color: #e07a5f;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: white;
+    cursor: text;
+}
