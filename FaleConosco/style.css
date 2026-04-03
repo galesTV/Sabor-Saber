@@ -65,6 +65,48 @@ body {
     cursor: pointer;
 }
 
+.master .breadcrumb-container {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.master .breadcrumb-container .breadcrumb-lista {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li {
+    display: flex;
+    align-items: center;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li a, .breadcrumb-lista li p {
+    font-size: 1.1rem;
+    color: #2e1a14;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li a {
+    color: #007680;
+    font-weight: 700;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li .separador {
+    color: #e07a5f;
+    font-weight: bold;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li .atual {
+    font-weight: 400;
+    color: #2e1a14;
+}
+
 .master .fale-conosco .titulo {
     background-color: #007680;
     width: 80%;

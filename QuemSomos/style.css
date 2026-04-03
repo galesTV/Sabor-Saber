@@ -31,6 +31,48 @@ body {
     padding: 20px 40px;
 }
 
+.master .breadcrumb-container {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.master .breadcrumb-container .breadcrumb-lista {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li {
+    display: flex;
+    align-items: center;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li a, .breadcrumb-lista li p {
+    font-size: 1.1rem;
+    color: #2e1a14;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li a {
+    color: #007680;
+    font-weight: 700;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li .separador {
+    color: #e07a5f;
+    font-weight: bold;
+}
+
+.master .breadcrumb-container .breadcrumb-lista li .atual {
+    font-weight: 400;
+    color: #2e1a14;
+}
+
 .master .topo .logo img {
     height: 120px;
 }
@@ -65,9 +107,6 @@ body {
     cursor: pointer;
 }
 
-/* --- CONTEÚDO QUEM SOMOS --- */
-
-/* Barra de Título Azul */
 .titulo-quemsomos {
     background-color: #007680;
     width: 80%;
@@ -84,10 +123,8 @@ body {
     font-weight: 400;
 }
 
-/* Card de Informações Laranja */
 .info {
     background-color: #EEAA66;
-    /* Cor exata da imagem */
     width: 95%;
     max-width: 1200px;
     margin: 0 auto 60px auto;
@@ -104,7 +141,6 @@ body {
     text-align: justify;
 }
 
-/* Estilo para os subtítulos (Nossa Essência, Missão, etc) */
 .info-texto .info-texto-titulo {
     font-size: 2.2rem;
     font-weight: 400;
@@ -113,7 +149,6 @@ body {
     text-align: left;
 }
 
-/* Frase final centralizada */
 .info-texto .info-texto-final {
     text-align: center;
     font-size: 1.4rem;
@@ -122,7 +157,6 @@ body {
     margin-bottom: 0;
 }
 
-/* --- RODAPÉ --- */
 .master .rodape {
     background-color: #007680;
     width: 100%;
