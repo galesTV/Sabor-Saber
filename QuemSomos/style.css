@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #fce4b4;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.master {
+    width: 100%;
+}
+
+.master .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.master .topo .logo img {
+    height: 120px;
+}
+
+.master .topo .menu {
+    background-color: #007680;
+    display: flex;
+    padding: 4px 10px;
+    border-radius: 50px;
+    gap: 30px;
+    align-items: center;
+}
+
+.master .topo .menu a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.master .topo .menu a:nth-child(2) {
+    background-color: #e07a5f;
+    border-radius: 50px;
+}
+
+.master .topo .pesquisar {
+    background-color: #e07a5f;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* --- CONTEÚDO QUEM SOMOS --- */
+
+/* Barra de Título Azul */
+.titulo-quemsomos {
+    background-color: #007680;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.titulo-quemsomos p {
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Card de Informações Laranja */
+.info {
+    background-color: #EEAA66;
+    /* Cor exata da imagem */
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-texto p {
+    font-size: 1.3rem;
+    color: #2e1a14;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilo para os subtítulos (Nossa Essência, Missão, etc) */
+.info-texto .info-texto-titulo {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Frase final centralizada */
+.info-texto .info-texto-final {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* --- RODAPÉ --- */
+.master .rodape {
+    background-color: #007680;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.master .rodape .icone img {
+    height: 120px;
+}
+
+.master .rodape .menu-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 60px;
+}
+
+.master .rodape .menu-rodape a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.master .rodape .aviso-email p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.master .rodape .aviso-email .email p {
+    background-color: #e07a5f;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: white;
+    cursor: text;
+}
