@@ -46,20 +46,39 @@
                         ou quer compartilhar o resultado do seu prato? Mande uma
                         mensagem para a nossa cozinha.</p>
 
-                    <div class="formulario">
-                        <p>Nome*:</p>
-                        <p>Email*:</p>
-                        <p>Assunto*:</p>
-                        <p>Descrição:</p>
+                    <form class="formulario-contato">
+                        <p class="aviso-obrigatorio">Campos obrigatórios estão acompanhados com *.</p>
+                        
+                        <fieldset>
+                            <legend>Sua Mensagem</legend>
+                            <ul>
+                                <li>
+                                    <label for="username">Nome*:</label>
+                                    <input id="username" type="text" name="username" class="input-padrao" required>
+                                </li>
+                                <li>
+                                    <label for="email">Email*:</label>
+                                    <input id="email" type="email" name="email" class="input-padrao" required>
+                                </li>
+                                <li>
+                                    <label for="assunto">Assunto*:</label>
+                                    <input id="assunto" type="text" name="assunto" class="input-padrao" required>
+                                </li>
+                                <li>
+                                    <label for="descricao">Descrição:</label>
+                                    <input id="descricao" type="text" name="descricao" class="input-padrao input-grande">
+                                </li>
+                            </ul>
+                        </fieldset>
 
-                        <div class="enviar">
-                            <p>Enviar</p>
+                        <div class="botao-area">
+                            <button type="submit" id="btn-enviar">Enviar Mensagem</button>
                         </div>
-                    </div>
+                    </form>
 
                     <div class="contato">
                         <p>Caso queira enviar um email, envie para:
-                            <p class="email">contato@saboresaber.com.br</p>
+                            <p class="email-texto">contato@saboresaber.com.br</p>
                         </p>
                     </div>
                 </div>
